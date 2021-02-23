@@ -1,0 +1,3 @@
+C:\Users\William KiJuan\Projects\Responsive Web Design\ProductLanding\obj\Debug\ProductLanding.njsprojAssemblyReference.cache
+C:\Users\William KiJuan\Projects\Responsive Web Design\ProductLanding\obj\Debug\ProductLanding.njsproj.CoreCompileInputs.cache
+C:\Users\William KiJuan\Projects\Responsive Web Design\ProductLanding\bin\Microsoft.NodejsTools.WebRole.dll

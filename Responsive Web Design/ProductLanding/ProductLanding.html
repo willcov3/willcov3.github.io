@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+
+<!--This is my product landing page 2/18 #1-13 is complete-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Our Products</title>
+    <style>
+        #header {
+            grid-area: header;
+        }
+        #content {
+            grid-area: content;
+            position: relative;
+            top: 125px;
+            z-index:0;
+        }
+        #footer {
+            grid-area: footer;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            z-index: 1;
+        }
+        #column1 {
+            grid-area: column1;
+            border: 5px solid black;
+            border-radius: 5px;
+        }
+        #column2 {
+            grid-area: column2;
+            border: 5px solid gray;
+            border-radius: 5px;
+            
+        }
+        #column3 {
+            grid-area: column3;
+            border: 5px solid red;
+            border-radius: 5px;
+            
+        }      
+        #aboutUs{}
+        #video {
+            width: 1000px;
+        }
+        #pricing {}
+        #header-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 125px;
+            background-color: lightgray;
+            z-index: 1;
+        }
+
+        @media (max-width: 500px) {
+            #video {
+                width: 300px;
+            }
+        }
+    
+
+        #nav-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 90%;
+            height: 125px;
+            background-color: lightgray;
+            z-index: 1;
+        }
+        .myfirstgrid {
+            display: grid;
+            grid-template-areas: 'header' 'content' 'footer';
+            grid-gap: 5px 50px;
+        }
+        .myfirstflexbox {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .myflexboxgrid {
+            display: grid;
+            grid-template-areas: 'column1 column2 column3';
+            grid-template-columns: 200px 200px 200px;
+            grid-gap: 10px;
+        }
+        .nav-link {}
+
+
+        /*This will create a list to show items in a line*/
+        .inline-list {
+            display: inline;
+            list-style: none;
+            padding: 0px;
+        }
+
+        /*This is required to make list items inline as well*/
+        .inline-list li {
+            display: inline;
+            color: red
+        }
+
+        /*This is a seperator using ::after*/
+        .inline-list li::after {
+            content: " | ";
+        }
+
+        /*This will ensure that the last item does not have the seperator |*/
+        .inline li:last-child::after {
+            content: "";
+        }
+
+        
+        /*This is how you format links. link is initial. visited and hover are implied. you can also use active*/
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;}
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;}
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+
+        }
+        /*Set the height of the nav bar equal to padding and negative margin when you want to jump around 
+            with links when you have in page links        */
+        :target {
+            padding-top: 125px;
+            margin-top: -125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myfirstgrid">
+        <!--This is my header-->
+        <div id="header">
+            <img id="header-img" src="Images/logo.jpg" />
+
+            <!--This is my navbar with links within the page-->
+            <nav id="nav-bar">
+                <h2>True Love Missionary Baptist Church</h2>
+                <ul class="inline-list">
+                    <li><a href="#aboutUs" class="nav-link">About Us</a></li>
+                    <li><a href="#video" class="nav-link">Video</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--This is my body-->
+        <div id="content">
+            <h1 id="aboutUs">About Us</h1>
+            <p> We are a small local church here to serve the needs of our community. </p>
+
+            <!--Here is where my form where users enter their email address to get more information-->
+            <form id="form" method="post" action="mailto:https://www.freecodecamp.com/email-submit">
+                <label for="email">
+                    For more information, enter your email address below:
+                </label><br>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required><br><br>
+
+                <input id="submit" type="submit" value="Send me more info now!">
+            </form>
+
+            <!--This is my video-->
+            <h1 >Video</h1>
+            <video controls id="video">
+                <source src="Images/pastorParkerLove.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h1 id="pricing">Pricing</h1>
+            <div class="myfirstflexbox">
+                <div class="myflexboxgrid">
+                    <div id="column1">
+                        <h2>Free Services</h2>
+                        <p>We offer prayer, baptism, and congregational services.</p>
+                    </div>
+                    <div id="column2">
+                        <h2>Counseling</h2>
+                        <p>
+                            We offer parental, marriage, and personal counseling for a small
+                            fee depending on circumstance and fee.
+                        </p>
+                    </div>
+                    <div id="column3">
+                        <h2>Membership</h2>
+                        <p>
+                            Join our orginization, pay 10% of your income, and receive unlimited
+                            access to exclsuive members only services including marriages, funerals,
+                            and access to our dating app.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br />
+        </div>
+
+        <!--This is my footer-->
+        <div id="footer">
+            <p>Call us at (310) 555 1234.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "survey-form",
+  "version": "0.0.0",
+  "description": "SurveyForm",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

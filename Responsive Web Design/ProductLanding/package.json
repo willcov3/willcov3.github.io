@@ -1,0 +1,9 @@
+{
+  "name": "product-landing",
+  "version": "0.0.0",
+  "description": "ProductLanding",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

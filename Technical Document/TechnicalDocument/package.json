@@ -1,0 +1,9 @@
+{
+  "name": "technical-document",
+  "version": "0.0.0",
+  "description": "TechnicalDocument",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

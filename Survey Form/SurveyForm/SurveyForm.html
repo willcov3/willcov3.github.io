@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<!--This project requried me to create a survey.-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Prayer Request</title>
+    <style>
+        #title {
+            color: darkgreen;
+            font-family: "Lucida Handwriting", cursive;
+            font-size: 73px;
+            text-align: center;
+        }
+
+        #background {
+            background-color: palegreen;
+            margin: 0px 200px 0px 200px;
+            padding: 15px 25px 15px 25px;
+        }
+
+        #myimage {
+            width: 100%;
+        }
+        #description {
+        }
+
+        #survey-form {
+        }
+        body {
+            
+            background-image: url("Images/forest.jpg");
+            background-color: darkgreen;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <!--Title for the page-->
+        <h1 id="title"> Prayer Request</h1>
+        <img src="Images/church.jpg" id="myimage" />
+        <p id="description">Please fill out this breif survey if you have prayer requests (petitions to God).</p>
+
+        <!--Here is the form-->
+        <form id="survey-form" method="post" action="mailto:me@gmail.com">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+            <label for="email" id="email-label">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required><br><br>
+
+            <label for="number" id="number-label">Phone:</label>
+            <input type="number" id="number" name="number" placeholder="9999999999" min="1" max="9999999999"><br><br>
+
+            <label for="dropdown-label">Prayer Reason:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="self">Self</option>
+                <option value="others">Others</option>
+                <option value="world">World</option>
+            </select><br><br>
+
+            <p>Are you a believer?</p>
+            <input type="radio" id="believer" name="believer" value="believer">
+            <label for="believer">Believer</label><br>
+            <input type="radio" id="nonbeliever" name="believer" value="nonbeliever">
+            <label for="nonbeliever">Non-believer</label><br>
+            <input type="radio" id="other" name="believer" value="other">
+            <label for="other">Other</label>
+
+            <p>What is your religion?</p>
+            <input type="checkbox" id="christian" name="religion" value="christian">
+            <label for="christian"> Christian</label><br>
+            <input type="checkbox" id="catholic" name="religion" value="catholic">
+            <label for="catholic"> Catholic</label><br>
+            <input type="checkbox" id="jewish" name="religion" value="jewish">
+            <label for="jewish"> Jewish</label><br>
+            <input type="checkbox" id="islamic" name="religion" value="islamic">
+            <label for="islamic"> Islamic</label><br>
+            <input type="checkbox" id="other" name="religion" value="other">
+            <label for="other"> Other</label><br><br>
+
+            <p>Additional Details:</p>
+            <textarea rows="4" cols="70" name="textarea"
+                      form="survey-form">Type more information about your prayer request here.</textarea><br><br>
+
+            <input id="submit" type="submit">
+        </form>
+    </div>
+</body>
+</html>

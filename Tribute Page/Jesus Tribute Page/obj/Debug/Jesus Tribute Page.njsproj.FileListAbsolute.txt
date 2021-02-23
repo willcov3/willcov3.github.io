@@ -1,0 +1,3 @@
+C:\Users\William KiJuan\Projects\Tribute Page\Jesus Tribute Page\obj\Debug\Jesus Tribute Page.njsprojAssemblyReference.cache
+C:\Users\William KiJuan\Projects\Tribute Page\Jesus Tribute Page\obj\Debug\Jesus Tribute Page.njsproj.CoreCompileInputs.cache
+C:\Users\William KiJuan\Projects\Tribute Page\Jesus Tribute Page\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<!--This is the responsive tribute project. -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Come to Jesus Christ</title>
+    <style>
+
+        #main {
+            display: grid;                          /*This is how you use the grid feature. Use fr, auto, %, or px*/
+            grid-template-columns: 1fr;             /*creates 1 column 1/1 fractions wide.*/
+            grid-template-rows: 80px 600px 450px;   /*creates 3 rows, all with various heights*/
+            grid-gap: 10px 10px;                    /*Creates a gap between rows then columns*/
+            justify-items: center;                  /*Use justify-self to align horizontal. Also left and right*/
+            background-color: aliceblue;
+            font-family: "Papyrus", fantasy, sans-serif;
+        }
+        #title {
+            display: grid;
+            grid-row: 1/2;                          /*This grid will be between line 1 and 2*/
+            width: 850px;
+            height: 100px;
+            justify-items: center;
+        }
+        #img-div {
+            display: grid;
+            grid-row: 2/3;
+            width: 850px;
+            justify-items: center;
+        }
+        #image {
+            width: 850px;
+        }
+        #img-caption {
+            width: 850px;
+            background-color: white;
+            color: darkblue;
+            font-family: Tahoma, sans-serif;
+        }
+        #tribute-info {
+            display: grid;
+            grid-row: 3/4;
+            margin: 0px 200px 0px 200px;
+            color: darkblue;
+        }
+        #tribute-link{
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            line-height: .01;
+            color: darkblue;
+            font-family: "Lucida Handwriting", cursive;
+            font-size:73px;
+        }
+        
+        h4 {
+            font-style: italic;
+            line-height: .01;
+        }
+    </style>
+</head>
+<body id="main">
+    <!-- Main title-->
+    <div id="title">
+        <h1>Jesus Christ</h1>
+        <h4>The man that can save your soul</h4>
+    </div>
+
+    <!-- Main image-->
+    <div id="img-div">
+        <img id="image" src="Images/JesusChrist.jpg" />
+        <p id="img-caption">Jesus Christ, Our Lord and Savior! Please note, this may or may not be an actual represenation
+        of Christ, as they didn't have good cameras back in the year 0030, and paintings and images have been distorted to 
+        hide an accurate portrayl.</p>
+    </div>
+
+    <!-- Tribute information-->
+    <div id="tribute-info">
+        <h2>Steps for Salvation:</h2>
+        <h3>1. Believe with your heart that Jesus Christ is Lord</h3>
+        <p> There is One God, the Creator, who sent His Son, Jesus, to save the world from our sins 
+        by paying the ultimate sacrifice. He was born of the Virgin Mary, conceived by the Holy Spirit, 
+        which makes Him fully human and fully God.</p>
+        <h3>2. Confess with your mouth</h3>
+        <p> Now that you believe, acknowledge with your mouth that Jesus is Lord. If you are still struggling 
+        with belief, pray to the Lord by entering a meditative state and speak from your heart or say, "Lord, 
+        help me to believe in you. Show me your way. Allow Jesus Christ to change my heart, my will, and desires,
+        so I can show the world love. I have a small mustard seed of faith; make it grow Lord! In Jesus name I pray, 
+        Amen.</p>
+        <h3>3. Repent your sins and turn away from evil</h3>
+        <p> No one is perfect or will ever be perfect. God wants us to turn away from sins because they bring
+            destruction to our lives. The commands in the Bible are guidelines, that are almost unrealistic to follow,
+            but we are to sacrifice our burning desires to bring love to this dark and hopeless world.</p>
+        <p> For more information, <a id="tribute-link" target="_blank"
+            href="https://www.biblegateway.com/passage/?search=John%203%3A16&version=GNT">
+                click here</a>.</p>
+    </div>
+</body>
+    </html>

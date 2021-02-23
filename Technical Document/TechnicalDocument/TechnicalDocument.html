@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>M &amp; M Soul Food Menu</title>
+    <style>
+        #background {
+            background-color: red;
+            /*margin: 0px 0px 0px 0px;*/
+            position:fixed;
+            top:0px;
+            left:0px;
+            width: 100%;
+            height: 100%;
+        }
+        #main-doc {
+            background-color: white;
+            /*margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            */ width: 800px;
+            position: relative;
+            top: 0px;
+            left: 300px;
+        }
+        header {
+            font-size: 36px;
+            color: red;
+            text-align: center;
+        }
+        #navbar {
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            background-color: black;
+            z-index: 1;
+            color: green;
+        }
+        .navbar {
+
+        }
+        li a .nav-link {
+            display: block;
+            width: 300px;
+            background-color: #dddddd;
+            border: 2px solid green;
+            /*margin: 15px 0px 15px 0px; */
+            /* padding: 5px 5px 5px 5px;            */
+        }
+        .nav-link {
+            
+        }
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        @media only screen and (max-width: 600px) {
+            #background {
+                background-color: black;
+            }
+
+            #main-doc {
+                background-color: white;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+
+
+        <main id="main-doc">
+            <nav id="navbar">
+                <header> Venni Mac's M&amp;M Soul Food</header>
+                <ul class="navbar">
+                    <li><a href="#breakfast" class="nav-link">Breakfast</a></li>
+                    <li><a href="#lunch" class="nav-link">Lunch</a></li>
+                    <li><a href="#dinner" class="nav-link">Dinner</a></li>
+                    <li><a href="#desserts" class="nav-link">Desserts</a></li>
+                    <li><a href="#beverages" class="nav-link">Beverages</a></li>
+                </ul>
+            </nav>
+            <!--This is our breakfast menu-->
+            <section class="main-section" id="breakfast">
+
+
+                <header>Breakfast</header>
+
+                <p>
+                    Breakfast is available from 8am-12pm daily.
+                </p>
+
+                <h2>Signature Dishes</h2>
+                <p>
+                    Includes eggs, one side (rice, grits, or potatoes), and bread
+                    (biscuits, toast, pancakes, or waffles).
+                </p>
+                <ul>
+                    <li>Liver &amp; Onions</li>
+                    <li>Sausage Patty</li>
+                    <li>Bacon</li>
+                    <li>Ham Steak</li>
+                    <li>Sausage Links</li>
+                    <li>Fish</li>
+                    <li>Chops</li>
+                    <li>Chicken Wings</li>
+                </ul>
+
+                <h2>Omelettes</h2>
+                <p>
+                    Includes one side (rice, grits, or potatoes), and bread
+                    (biscuits, toast, pancakes, or waffles).
+                </p>
+                <ul>
+                    <li>Cheese Omelette</li>
+                    <li>Veggie Omelette</li>
+                    <li>Turkey Link &amp; Cheese Omelette</li>
+                    <li>Ham &amp; Cheese Omelette</li>
+                    <li>Denver Omelette</li>
+                </ul>
+
+                <h2>Breakfast Specials</h2>
+                <p>Please, No Subsitutions. Thank you!</p>
+                <ol>
+                    <li>French Toast, 2 Links, 2 Bacon, 2 Eggs</li>
+                    <li>2 Turkey Bacon &amp; Oatmeal</li>
+                    <li>1 Hot Link, 2 Pancakes, 2 Eggs &amp; 2 Potatoes</li>
+                    <li>2 Bacon Strips, 2 Pancakes &amp; 2 Eggs</li>
+                    <li>1 Waffle &amp; 3 Wings</li>
+                </ol>
+                <h4>Venni's Ultimate Breakfast</h4>
+                <code>
+                    Includes 2 chicken wings, 1 pc fish, 1 side (grits, rice, or potatoes), 2 Eggs, and bread (biscuits
+                    toast, or pancakes).
+                </code>
+            </section>
+
+
+            <!--This is our lunch menu-->
+            <section class="main-section" id="lunch">
+                <header>Lunch</header>
+                <p>
+                    Lunch is available from 11am-3pm, Monday-Friday.
+                </p>
+                <p>
+                    Includes a hearty portion of meat, two sides, and cornbread muffins.
+                </p>
+                <ol>
+                    <li>Liver &amp; Onions</li>
+                    <li>Meat Loaf</li>
+                    <li>BBQ Hot Links</li>
+                    <li>Fish</li>
+                    <li>Hot Links</li>
+                    <li>Chops</li>
+                    <li>Chicken</li>
+                    <li>Turkey Wings</li>
+                    <li>Short Ribs</li>
+                    <li>Ox Tails</li>
+                </ol>
+                <code>Ask about today's lunch special</code>
+                <p>Chitterlings avaiable year round</p>
+            </section>
+
+
+            <!--This is our dinner menu-->
+            <section class="main-section" id="dinner">
+                <header>Dinner</header>
+                <p>
+                    Dinner is available from 11am-8pm, daily. Includes a heartier portion of meat, three sides, and
+                    cornbread muffins.
+                </p>
+                <ol>
+                    <li>Liver &amp; Onions</li>
+                    <li>Meat Loaf</li>
+                    <li>BBQ Hot Links</li>
+                    <li>Fish</li>
+                    <li>Hot Links</li>
+                    <li>Chops</li>
+                    <li>Chicken</li>
+                    <li>Turkey Wings</li>
+                    <li>Short Ribs</li>
+                    <li>Ox Tails</li>
+                </ol>
+                <p>Chops now available in pork and turkey!</p>
+                <code>Ask about today's dinner special</code> <br />
+                <code>Catering menu coming soon!</code>
+            </section>
+
+
+            <!--This is our dessert menu-->
+            <section class="main-section" id="desserts">
+                <header>Desserts</header>
+                <p> Try one of our fresh homemade deserts, available in 3 sizes: small, medium, and large.</p>
+                <p> Pies and cakes can be baked fresh daily upon request. Please provide at least 24 hours notice.</p>
+                <ol>
+                    <li>Peach Cobbler</li>
+                    <li>Banana Pudding</li>
+                    <li>Cake</li>
+                </ol>
+            </section>
+
+            <!--This is our beverage menu-->
+            <section class="main-section" id="beverages">
+                <header>Beverages</header>
+                <p> Cool down with one of our sweet southern style beverages or enjoy a hot coffee or tea.</p>
+
+                <ol>
+                    <li>Lemonade</li>
+                    <li>Iced Tea</li>
+                    <li>Coffee</li>
+                    <li>Hot Tea</li>
+                </ol>
+                <p>Try our specialty mixed drinks!</p>
+                <ol>
+                    <li>Sunset</li>
+                    <li>Obama</li>
+                    <li>Arnold Palmer</li>
+                </ol>
+                <code>Sunset is 50% Lemonade</code><br />
+                <code>Obama is 25% Lemonade</code><br />
+                <code>Arnold Palmer is 75% Lemonade</code><br />
+            </section>
+        </main>
+    </div>
+</body>
+</html>
