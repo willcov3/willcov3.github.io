@@ -3,11 +3,247 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Welcome to My Portfolio</title>
+    <title>William KiJuan | My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: beige;
+            padding:30px;
+        }
+        .mainImage {
+            height: 200px;
+            float: right;
+            margin: 0px 0px 40px 20px;
+        }
+        .parentImage {
+            height: 200px;
+            float: left;
+            margin: 30px 20px 40px 10px;
+        }
+        .mainBackground {
+            background-image: url(Images/library.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding-bottom:75px;
+        }
+        .transparentBox{
+            background-color: beige;
+            margin: 5%;
+            padding: 1%;
+        }
+        .mainContent{
+            opacity: 1.0;
+            margin:40px 60px 40px 60px;
+        }
+        .note{
+            color:red;
+        }
+       
+        .navbar {
+            background-color: black;
+            width: 100%;
+            padding: 10px 0px 10px 0px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .resume {
+            background-color: whitesmoke;
+            font-family: "Courier New", monospace;
+        }
+        .resume p{
+            padding-left:30px;
+            font-size:12px;
+        }
+        .resume h1 {
+            text-align: center;
+            font-weight: bold;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        .resume h4 {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        .tab {
+            display: inline-block;
+            margin-left: 300px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to my Portfolio!</h1>
-    <p>Click the button below to continue.</p>
-    <a href="My Portfolio/MyPortfolio/MyPortfolio.html">Click here!</a>
+<div class="mainBackground">    
+    <div class="jumbotron">
+        <h1>William KiJuan Covington</h1>
+        <p>Your Personal Programmer</p>
+
+        <!--Here is my navigation bar called navbar.-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+
+                    <!--About Me-->
+                    <li><a href="#aboutMe">About Me</a></li>
+
+                    <!--Resume-->
+                    <li><a href="#resume">Resume</a></li>
+
+                    <!--Webpages-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Web Pages
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.mandmsoulfood.com/">M &amp; M Soul Food</a></li>
+                        </ul>
+                    </li>
+
+                    <!--Sample Work-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Sample Work
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Responsive Web Design/ProductLanding/ProductLanding.html">True Love Church</a></li>
+                            <li><a href="Survey Form/SurveyForm/SurveyForm.html">Survey Form</a></li>
+                            <li><a href="Technical Document/TechnicalDocument/TechnicalDocument.html">Restuarant Menu</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+`   </div>
+
+        <!--This is my main content area-->
+
+        <div class="transparentBox">
+            <div class="mainContent">
+                <img src="Images/william6.jpg" class="mainImage img-rounded center-block" />
+                <h2>Welcome to my webpage!</h2>
+
+                <p>
+                    I'm Will. I am an aspiring programmer from Los Angeles, CA. Currently, I am learning front end programming (which is user side/ design oriented programming).
+                    I first learned to code at Loyola Marymount University, and I currently code as a hobby in my free time. I am familiar with HTML and JavaScript,
+                    and I hope to master my programming skills soon.
+                </p>
+
+                <br>
+
+                <p class="note">
+                    Contact me today at <a href="#">willkcov@gmail.com</a> for questions or inquiries. I am open to freelance gigs, internships, and entry level jobs.
+                </p>
+
+                <hr>
+
+                <div id="aboutMe">
+                    <img src="Images/williamMom.jpg" class="parentImage" /><img src="Images/WilliamDad.jpg" class="parentImage" />
+                    <h2>About Me</h2>
+
+                    <p>
+                        I was born in the 90's to two proud parents: Tamara Gix - a restauarant manager, and William D. Covington II - a welder.
+                        Although my family is from the deep south, I am 100% Californian - born in Inglewood, raised in Compton, and currently residing in Hawthorne.
+                        I was raised in church, so most of my life decisions are spiritual and led by an invisible force I refer to as "God".
+                        My heritage is African American, and I am proud to be a black man. I love gospel music, reality television, and tequila.
+                        <br /><br />
+                        As a child, I also dreamed to work in an office. I accomplished that dream in 2016 when I started working as an accountant.
+                        Since I couldn't retire at the age of 25 due to financial reasons, I decided to chase something new in life - a challenge: I wanna be a programmer.
+                        I want to show the world my talents in a way that is both artistic and intellectual. I'm going to chase my dreams, and I'm going to be somebody great.
+                    </p>
+
+                </div>
+
+                <hr>
+
+                <div id="resume">
+                    <h2>Resume</h2>
+                    <div class="resume">
+                        <h1>William K. Covington</h1>
+                        <br />
+                        <h4>SUMMARY</h4>
+
+                        <p>
+                            Free lance programmer seeking to utilize JavaScript, HTML and other programming languages in a professional environment that offers opportunities for growth, learning, and networking.
+                            Open to short term gigs, internships, and full time positions. Fast learner with positive attitude.<br /><br />
+                        </p>
+                        <br />
+                        <h4>PROFESSIONAL EXPERIENCE</h4>
+                        <p>
+                            Belkin Inc. – Playa Vista, CA<span class="tab"></span> 						Mar. 2020 – Oct. 2020<br />
+                            Accounting Analyst<br />
+                        </p>
+                        <ul>
+                            <li>Analyzed customer discount data and purchase order invoices for an international electronics company</li>
+                            <li>Used pivot tables and V-Look Ups in Excel to confirm accuracy of payments</li>
+                        </ul><br />
+                        <p>
+                            Wolters Kluwer – Torrance, CA<span class="tab"></span> 					Jan. 2018 – Dec. 2019<br />
+                            Junior Accountant<br />
+                        </p>
+                        <ul>
+                            <li>Reconciled and maintained AR accounts for multibillion dollar accounting information management system’s company</li>
+                            <li>
+                                Managed customer inquiry database by processing various AR requests including payment application, transferring payments between various GL accounts, modifying payment plans
+                                and cancelling invoices
+                            </li>
+                        </ul><br />
+                        <p>
+                            Nippon Express – El Segundo, CA<span class="tab"></span> 			Jun. 2016 – Dec. 2017<br />
+                            Accounting Specialist<br />
+                        </p>
+                        <ul>
+                            <li>Processed AP and AR for international logistics company and performed accounting tasks related to month-end closing responsibilities</li>
+                            <li>Assisted management by creating journal entries and reviewed financial statements during month end closing</li>
+                        </ul><br />
+                        <p>
+                            M&M Soul Food – Carson, CA<span class="tab"></span> 				Jun. 2010 – May 2016<br />
+                            Assistant Manager<br />
+                        </p>
+                        <ul>
+                            <li>Performed daily accounting transactions including invoicing, payroll, and inventory while managing restaurant staff and addressing customer service skills</li>
+                            <li>Created and managed social media accounts and online presence  </li>
+                        </ul><br />
+
+
+                        <br />
+                        <h4>TECHNICAL SKILLS</h4>
+                        <p>
+                            Advanced Excel, JavaScript, BootStrap, HTML
+                        </p>
+
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div id="webPages">
+                    <h2>Web Pages</h2>
+                    <p>Here is a list of websites that I have designed so far:</p>
+                    <ul>
+                        <li><a href="http://www.mandmsoulfood.com/">mandmsoulfood.com</a></li>
+                    </ul>
+                </div>
+
+                <div id="otherWork">
+                    <h2>Other Work</h2>
+                    <p>Here are some sample projects I did just for fun!</p>
+                    <ul>
+                        <li><a href="Responsive Web Design/ProductLanding/ProductLanding.html">True Love Church</a></li>
+                        <li><a href="Survey Form/SurveyForm/SurveyForm.html">Survey Form</a></li>
+                        <li><a href="Technical Document/TechnicalDocument/TechnicalDocument.html">Restuarant Menu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>
 </html>
